@@ -1,15 +1,23 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import HomePage from '../views/HomePage.vue'
+import MemoriesPage from '../pages/MemoriesPage.vue'
+
 
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/memories'
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomePage
+    path: '/memories',
+    component: MemoriesPage
+  },
+  {
+    path: '/memories/:id',
+    component: () => import('../pages/MemoryDetailsPage.vue') //This is called lazy import(dynamic Import), until i need the code for this component this is not be downloaded
+  },
+  {
+    path: '/memories/add',
+    component: () => import('../pages/AddMemoryPage.vue') //This is called lazy import(dynamic Import), until i need the code for this component this is not be downloaded
   }
 ]
 

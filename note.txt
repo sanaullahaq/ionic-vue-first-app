@@ -1,0 +1,3 @@
+After creating the ionic-vue-first-app, the script language was TypeScript (TS), We have converted to from TypeScript to JavaScript.
+Following the steps in `https://ionicframework.com/docs/vue/quickstart#build-your-way-with-typescript-or-javascript`
+For better understanding we can see `https://youtu.be/mQ4zmFy4d7Y`
