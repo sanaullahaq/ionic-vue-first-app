@@ -34,7 +34,7 @@ const store = createStore({
                 id: new Date().toISOString(),
                 title: memoryData.title,
                 image: memoryData.imageURL,
-                describe: memoryData.description
+                description: memoryData.description
             }
             state.memories.unshift(newMemory)    //adding the new memory to the begening of the list
         }
